@@ -1,63 +1,71 @@
-[My Actor](https://apify.com/complex_intricate_networks/my-actor?fpr=data)
+[My Actor](https://apify.com/edgeofcali/my-actor?fpr=data)
 
-# 🚀 CryptoCap: Web3 Funding & VC Deal Flow Scraper
+# Empty JavaScript template
 
-**Turn crypto news into actionable B2B leads.** This Actor is a high-performance, lightweight scraper designed for Web3 sales teams, VC analysts, and startup founders who need structured data on the latest capital raises in the blockchain space.
+ 
 
-It monitors the **"Top Three"** crypto news powerhouses—**The Block, CoinDesk, and Decrypt**—extracting clean, structured funding data directly into your CRM or spreadsheet.
+Start a new [web scraping](https://apify.com/web-scraping) project quickly and easily in JavaScript (Node.js) with our empty project template. It provides a basic structure for building an Actor with [Apify SDK](https://docs.apify.com/sdk/js/) and allows you to easily add your own functionality.
 
----
+## Included features
 
-## 🌟 Why use CryptoCap?
+- **[Apify SDK](https://docs.apify.com/sdk/js/)** - toolkit for building [Actors](https://apify.com/actors)
+- **[Crawlee](https://crawlee.dev/)** - web scraping and browser automation library
 
-In the fast-moving crypto world, a funding announcement is the #1 signal that a company is ready to scale. Stop manual tracking and automate your lead pipeline:
+## How it works
 
-- **B2B Sales & Agencies**: Target startups the moment they close a round—the "peak" buying window for security audits, marketing, and dev tools.
-- **VC & Research**: Track which ecosystems (Solana, Ethereum, L2s) are attracting the most capital this week.
-- **Market Research**: Identify industry trends and competitive investment patterns without reading through hundreds of articles.
+This template is useful when you're already familiar with the [Apify SDK](https://docs.apify.com/sdk/js) and [Crawlee](https://crawlee.dev/) and want to start with a clean slate. It does not include `puppeteer` or `playwright` so install them manually and update the Dockerfile if you need them.
 
----
+## Resources
 
-## 🛠️ Features
+- [Node.js tutorials](https://docs.apify.com/academy/node-js) in Academy
+- [Video guide on getting data using Apify API](https://www.youtube.com/watch?v=ViYYDHSBAKM)
+- [Integration with Make](https://apify.com/integrations), GitHub, Zapier, Google Drive, and other apps
+- A short guide on how to create Actors using code templates:
 
-- **✅ Multi-Source Intelligence**: Monitors The Block, CoinDesk, and Decrypt simultaneously.
-- **✅ Noise Cancellation**: Sophisticated filters automatically strip out "price gossip," daily market updates, and sidebar widgets.
-- **✅ Deep Archive Access**: Built-in pagination logic allows you to crawl through pages of history.
-- **✅ Lightweight & Stealthy**: Uses optimized **Cheerio** logic and browser-fingerprinting to run 10x cheaper than browser-based scrapers while avoiding 403 blocks.
+[Video](https://www.youtube.com/embed/u-i-Korzf8w?enablejsapi=1&rel=0)
 
----
+## Getting started
 
-## 📥 Input Parameters
+For complete information [see this article](https://docs.apify.com/platform/actors/development#build-actor-at-apify-console). In short, you will:
 
-This Actor is "Plug & Play." You can control the depth of the crawl to manage your budget.
+1. Build the Actor
+2. Run the Actor
 
-| Parameter | Type | Description |
-| --- | --- | --- |
-| **Max Pages** | Integer | Limit how many pages deep the scraper should go for each site. |
-| **Proxy Configuration** | Object | Use Apify Proxy (Residential or Datacenter) to ensure 100% success rates. |
+## Pull the Actor for local development
 
----
+If you would like to develop locally, you can pull the existing Actor from Apify console using Apify CLI:
 
-## 📤 Output Example
+1. Install `apify-cli`
 
-The Actor provides structured, CRM-ready data in JSON, CSV, or Excel formats:
-
-| Company | Funding | Round | Source | Scraped At |
-| --- | --- | --- | --- | --- |
-| **Cryptio** | $45M | Series B | CoinDesk | 2026-03-12 |
-| **VelaFi** | $20M | Series B | The Block | 2026-01-12 |
-| **Babylon Labs** | $15M | Seed | Decrypt | 2026-01-07 |
-
-### Sample JSON Output:
+**Using Homebrew**
 
 ```
-{
-  "company": "Cryptio",
-  "funding": "$45M",
-  "round": "Series B",
-  "source": "CoinDesk",
-  "title": "Crypto accounting firm Cryptio raises $45 million as institutional demand accelerates",
-  "url": "[https://www.coindesk.com/business/2026/03/12/crypto-accounting-firm-cryptio-raises-45-million/](https://www.coindesk.com/business/2026/03/12/crypto-accounting-firm-cryptio-raises-45-million/)",
-  "scrapedAt": "2026-03-18T11:22:00Z"
-}
+$brew install apify-cli
 ```
+
+**Using NPM**
+
+```
+$npm -g install apify-cli
+```
+2. Pull the Actor by its unique `<ActorId>`, which is one of the following:
+
+- unique name of the Actor to pull (e.g. "apify/hello-world")
+- or ID of the Actor to pull (e.g. "E2jjCZBezvAZnX8Rb")
+
+You can find both by clicking on the Actor title at the top of the page, which will open a modal containing both Actor unique name and Actor ID.
+
+This command will copy the Actor into the current directory on your local machine.
+
+```
+$apify pull <ActorId>
+```
+
+## Documentation reference
+
+To learn more about Apify and Actors, take a look at the following resources:
+
+- [Apify SDK for JavaScript documentation](https://docs.apify.com/sdk/js)
+- [Apify SDK for Python documentation](https://docs.apify.com/sdk/python)
+- [Apify Platform documentation](https://docs.apify.com/platform)
+- [Join our developer community on Discord](https://discord.com/invite/jyEM2PRvMU)
