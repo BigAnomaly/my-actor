@@ -1,26 +1,25 @@
-[My Actor](https://apify.com/edgeofcali/my-actor?fpr=data)
+[My Actor](https://apify.com/harsha6582/my-actor?fpr=data)
 
-# Empty JavaScript template
+## Python Playwright template
 
  
 
-Start a new [web scraping](https://apify.com/web-scraping) project quickly and easily in JavaScript (Node.js) with our empty project template. It provides a basic structure for building an Actor with [Apify SDK](https://docs.apify.com/sdk/js/) and allows you to easily add your own functionality.
-
 ## Included features
 
-- **[Apify SDK](https://docs.apify.com/sdk/js/)** - toolkit for building [Actors](https://apify.com/actors)
-- **[Crawlee](https://crawlee.dev/)** - web scraping and browser automation library
-
-## How it works
-
-This template is useful when you're already familiar with the [Apify SDK](https://docs.apify.com/sdk/js) and [Crawlee](https://crawlee.dev/) and want to start with a clean slate. It does not include `puppeteer` or `playwright` so install them manually and update the Dockerfile if you need them.
+- **[Apify SDK](https://docs.apify.com/sdk/python/)** for Python - a toolkit for building Apify [Actors](https://apify.com/actors) and scrapers in Python
+- **[Input schema](https://docs.apify.com/platform/actors/development/input-schema)** - define and easily validate a schema for your Actor's input
+- **[Request queue](https://docs.apify.com/sdk/python/docs/concepts/storages#working-with-request-queues)** - queues into which you can put the URLs you want to scrape
+- **[Dataset](https://docs.apify.com/sdk/python/docs/concepts/storages#working-with-datasets)** - store structured data where each object stored has the same attributes
+- **[Playwright](https://pypi.org/project/playwright/)** - a browser automation library
 
 ## Resources
 
-- [Node.js tutorials](https://docs.apify.com/academy/node-js) in Academy
+- [Playwright for web scraping in 2023](https://blog.apify.com/how-to-scrape-the-web-with-playwright-ece1ced75f73/)
+- [Scraping single-page applications with Playwright](https://blog.apify.com/scraping-single-page-applications-with-playwright/)
+- [How to scale Puppeteer and Playwright](https://blog.apify.com/how-to-scale-puppeteer-and-playwright/)
+- [Integration with Zapier](https://apify.com/integrations), Make, GitHub, Google Drive and other apps
 - [Video guide on getting data using Apify API](https://www.youtube.com/watch?v=ViYYDHSBAKM)
-- [Integration with Make](https://apify.com/integrations), GitHub, Zapier, Google Drive, and other apps
-- A short guide on how to create Actors using code templates:
+- A short guide on how to build web scrapers using code templates:
 
 [Video](https://www.youtube.com/embed/u-i-Korzf8w?enablejsapi=1&rel=0)
 
